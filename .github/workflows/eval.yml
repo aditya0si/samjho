@@ -37,13 +37,16 @@
 name: eval
 
 on:
-  push:
-    branches: [main, master]
-  pull_request:
+  # Manual only, and deliberately so. This gate measures the real retriever against an ingested
+  # corpus; by ADR-001 that corpus can never exist on a GitHub-hosted runner, so a push-triggered run
+  # fails for an environmental reason rather than a regression — a permanently red check that tells a
+  # reader nothing and trains them to ignore it. Run it where the corpus lives:
+  #
+  #   locally:  DATABASE_URL=postgresql://samjho:***@localhost:5432/samjho uv run pytest -m eval
+  #   in CI:    set this job's `runs-on` to [self-hosted, samjho-corpus] (see the header above)
+  #
+  # `ci.yml` still runs on every push and carries every gate that can run without the corpus.
   workflow_dispatch:
-  schedule:
-    # Weekly, so dependency or model drift is caught even when nobody pushes.
-    - cron: "0 3 * * 1"
 
 permissions:
   contents: read

@@ -34,6 +34,16 @@ const nextConfig = {
   output: "standalone",
 
   /**
+   * `scripts/sync-syllabus.mjs` copies the shipped syllabus to `web/data/syllabus/` at build time, and
+   * server components read it from disk at request time. A file read through a computed path is not
+   * traced automatically, so the directory is named explicitly — without this, a deployment would
+   * upload the copy and still find no syllabus.
+   */
+  outputFileTracingIncludes: {
+    "/**": ["./data/syllabus/**"],
+  },
+
+  /**
    * The syllabus lives outside web/ (data/syllabus/, owned by the ingest builder) and is read at
    * runtime with fs, never bundled. Nothing textbook-derived is part of the web build.
    *

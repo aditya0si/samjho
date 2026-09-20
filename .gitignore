@@ -43,3 +43,7 @@ test-results/
 *.db
 .DS_Store
 Thumbs.db
+
+# The build-time copy of the syllabus made by web/scripts/sync-syllabus.mjs. Git keeps exactly one
+# copy (data/syllabus/class10.json); this one exists only inside a build or a deployment.
+web/data/
