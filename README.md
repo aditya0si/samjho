@@ -10,6 +10,11 @@ Built for a Class 10 student working through NCERT Science and Mathematics, and 
 wants to ingest a book once and share the resulting question bank (that part is a v1 stub, described
 honestly below).
 
+**Live:** <https://samjho-adityasinghprojects.vercel.app> — the syllabus browser, the chapter pages and
+all 11 concept animations run there. Asking questions needs the API, which is not deployed yet (it wants
+a host with ~2 GB of RAM and a Postgres with pgvector); the deployed site says exactly that instead of
+failing silently, which is verified behaviour and not a placeholder.
+
 ---
 
 ## The licensing boundary, up front
@@ -78,8 +83,10 @@ top and documents the one-line fix (a self-hosted runner).
 
 - **Multi-tenancy.** v1 is deliberately single-tenant; the teacher/class-code flow is an open stub, not
   a faked service.
-- **Deployment.** Nothing is deployed: no remote, no host, no live URL. `infra/` plus the two images are
-  what a deployment would use, and both images have been built and run locally.
+- **The API is not deployed.** The web app is live (link at the top); the API wants a host with ~2 GB of
+  RAM and a Postgres with pgvector, which is what `infra/` and `api/Dockerfile` are for. The Vercel
+  project can redeploy from `master` on demand — the Git integration is not connected, so a push does not
+  redeploy by itself.
 - **A real browser pass.** The web app's degraded states and the 11 animations were verified headlessly
   (server-rendered markup, CDP pixel measurements). Typing, clicking, hydration and tab order in a real
   browser have not been exercised, and there has been no screen-reader or axe run.
