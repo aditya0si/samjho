@@ -1,0 +1,14 @@
+# source: https://en.wikipedia.org/wiki/Reflection_%28physics%29
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 9 — Light: reflection
+
+Reflection is the change in direction of a wavefront at an interface between two different media so that the wavefront returns into the medium from which it originated. Common examples include the reflection of light, sound and water waves. The law of reflection says that for specular reflection (for example at a mirror) the angle at which the wave is incident on the surface equals the angle at which it is reflected.
+In acoustics, reflection causes echoes and is used in sonar. In geology, it is important in the study of seismic waves. Reflection is observed with surface waves in bodies of water. Reflection is observed with many types of electromagnetic wave, besides visible light. Reflection of VHF and higher frequencies is important for radio transmission and for radar. Even hard X-rays and gamma rays can be reflected at shallow angles with special "grazing" mirrors.
+
+== Reflection of light ==
+
+Reflection of light is either specular (mirror-like) or diffuse (retaining the energy, but losing the image) depending on the nature of the interface. In specular reflection the phase of the reflected waves depends on the choice of the origin of coordinates, but the rela
+tive phase between s and p (TE and TM) polarizations is fixed by the properties of the media and of the interface between them.
+A mirror provides the most common model for specular light reflection, and typically consists of a glass sheet with a metallic coating where the significant reflection occurs. Reflection is enhanced in metals by suppression of wave propagation beyond their skin depths.  Reflection also occurs at the surface of transparent media, such as water or glass, although the reflection is generally less effective compared with mirrors.

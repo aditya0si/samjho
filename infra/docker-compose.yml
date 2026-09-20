@@ -1,0 +1,127 @@
+# samjho — local deployment: postgres (pgvector) + api + web.
+#
+# The licensing boundary reaches into this file too: it must never carry textbook content. `corpus/`
+# is a bind mount that the operator fills with their own PDFs; it is gitignored and mounted read-only
+# into the API. Nothing from a corpus is ever baked into an image. See
+# docs/adr/ADR-001-licensing-boundary.md.
+#
+# Usage, from the repository root:
+#   cp .env.example .env                                # optional — every value below has a default
+#   docker compose -f infra/docker-compose.yml config   # validate without starting anything
+#   docker compose -f infra/docker-compose.yml --env-file .env up --build
+#
+# Every variable resolves through ${VAR:-default}, so `config` parses on a fresh clone with no .env
+# present. With no provider key set the API answers retrieval-only (no external calls at all).
+#
+# Status: this file is valid and parseable today, but `docker compose up` cannot build yet — the
+# `api` and `web` build contexts (../api, ../web) are still landing with their builders. See the
+# Status section of README.md.
+
+name: samjho
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-samjho}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-samjho}
+      POSTGRES_DB: ${POSTGRES_DB:-samjho}
+    volumes:
+      # Named volume: the ingested corpus and its embeddings survive `down`/`up`.
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-samjho} -d ${POSTGRES_DB:-samjho}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+    # Not published to the host by default — only the api container needs to reach it. Uncomment to
+    # inspect the database with a local client.
+    # ports:
+    #   - "5432:5432"
+
+  api:
+    build:
+      context: ../api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Points at the compose service on purpose. The host-side DATABASE_URL in .env.example
+      # (postgresql://samjho:***@localhost:5432/samjho) resolves to the api container itself and is
+      # deliberately NOT reused here; override POSTGRES_* in .env to change credentials instead.
+      DATABASE_URL: postgresql://${POSTGRES_USER:-samjho}:${POSTGRES_PASSWORD:-samjho}@postgres:5432/${POSTGRES_DB:-samjho}
+      CORPUS_DIR: /corpus
+      PDF_DIR: /corpus/pdfs
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-BAAI/bge-small-en-v1.5}
+      EMBEDDING_DIM: ${EMBEDDING_DIM:-384}
+      RERANKER_MODEL: ${RERANKER_MODEL:-cross-encoder/ms-marco-MiniLM-L-6-v2}
+      # Empty ANSWER_PROVIDER = retrieval-only answers. Setting a hosted provider sends retrieved
+      # textbook text to that provider; that is the operator's call, made here.
+      ANSWER_PROVIDER: ${ANSWER_PROVIDER:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
+      LLM_MODEL: ${LLM_MODEL:-}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      FTS_WEIGHT: ${FTS_WEIGHT:-0.4}
+      RETRIEVAL_CANDIDATES: ${RETRIEVAL_CANDIDATES:-24}
+      RETRIEVAL_TOP_K: ${RETRIEVAL_TOP_K:-6}
+      # Calibrated refusal bands (see api/config.py for the measured margins). These three must
+      # travel together: moving the confident line without re-measuring re-opens the false answers
+      # the maths refusal set caught.
+      REFUSAL_MIN_SCORE: ${REFUSAL_MIN_SCORE:-0.05}
+      REFUSAL_CONFIDENT_SCORE: ${REFUSAL_CONFIDENT_SCORE:-0.95}
+      REFUSAL_MIN_OVERLAP: ${REFUSAL_MIN_OVERLAP:-0.40}
+      HF_HOME: /models
+    volumes:
+      # The operator's own corpus: bind-mounted from the host, gitignored, never in an image, and
+      # read-only — the API reads it to answer the owner's questions; it never writes to it and never
+      # serves it back out. SAMJHO_CORPUS_PATH is the HOST path (relative to this file's directory);
+      # .env.example's CORPUS_DIR is the in-container path set above.
+      # Ingest on the host, on the machine that owns the book. If you would rather ingest inside the
+      # container, drop the `:ro` from this line.
+      - ${SAMJHO_CORPUS_PATH:-../corpus}:/corpus:ro
+      # Local embedding/reranker weights, so restarts do not re-download them.
+      - models:/models
+      # The syllabus skeleton is factual metadata and ships in the image, not here — but the api
+      # image must contain data/syllabus/class10.json, because SYLLABUS_PATH defaults to
+      # <repo root>/data/syllabus/class10.json resolved relative to api/config.py. If the Dockerfile
+      # copies only api/, bind-mount it in:
+      # - ../data/syllabus:/app/data/syllabus:ro
+    ports:
+      - "${API_PORT:-8000}:8000"
+    healthcheck:
+      # stdlib only: slim python images do not necessarily ship curl or wget.
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5).read()"]
+      interval: 15s
+      timeout: 10s
+      retries: 6
+      start_period: 90s  # first start may download the embedding and reranker models
+
+  web:
+    build:
+      context: ../web
+      args:
+        # NEXT_PUBLIC_* is inlined into the client bundle at build time, so it must be supplied here
+        # as well as in `environment` below.
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    healthcheck:
+      # node 22 has a global fetch; the slim node images ship no curl.
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 15s
+      timeout: 10s
+      retries: 6
+      start_period: 30s
+
+volumes:
+  pgdata:
+  models:

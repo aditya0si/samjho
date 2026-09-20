@@ -1,0 +1,40 @@
+# source: https://en.wikipedia.org/wiki/Electric_current
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 11 — Electricity
+
+An electric current is a flow of charged particles, such as electrons or ions, through an electrical conductor or space. It is defined as the net rate at which  electric charge flows through a surface. The moving particles are called charge carriers, which may be of several types, depending on the conductor.  In electric circuits, the charge carriers are often electrons moving through a wire. In semiconductors, the charge carriers can be electrons or holes. In an electrolyte, the charge carriers are ions, while in plasma- an ionized gas- they are also ions and electrons.
+In the International System of Units (SI), electric current is expressed in units of ampere (sometimes called an "amp", symbol A), which is equivalent to one coulomb per second. The ampere is an SI base unit and electric current is a base quantity in the International System of Quantities (ISQ). Electric current is also known as amperage and is measured using a device called an ammeter.
+Electric currents create magnetic fields, which are used in motors, generators, inductors, and transformers. In ordinary conductors, they cause Joule heating, which creates light in incandescent light bulbs. Time-varying currents emit electromagnetic waves, which are used in telecommunications to broadcast information.
+
+== Symbol ==
+The conventional symbol for current is I, which originates from the French phrase intensité du courant (current intensity). Current intensity is often referred to simply as current.  The I symbol was used by André-Marie Ampère, after whom the unit of electric current is named, in formulating Ampère's force law (1820).  The notation travelled from France to Great Britain, where it became standard, although at least one journal did not change from using C to I until 1896.
+
+== Conventions ==
+
+The conventional direction of current, also known as conventional current,  is arbitrarily defined as the direction in which positive charges flow. In a conductive material, the moving charged particles that constitute the electric current are called charge carriers. In metals, which make up the wires and other conductors in most electrical circuits, the positively charged atomic nuclei of the atoms are held in a fixed position, and the negatively charged electrons are the charge carriers, free to move about in the metal. In other materials, notably the semiconductors, the charge carriers can be positive or negative, depending on the dopant used. Positive and negative charge carriers may even be present at the same time, as happens in an electrolyte in an electrochemical cell.
+A flow of positive charges gives the same electric current, and has the same effect in a circuit, as an equal flow of negative charges in the opposite direction. Since current can be the flow of either positive or negative charges, or both, a convention is needed for the direction of current that is independent of the type of charge carriers. Negatively charged carriers, such as the electrons (the charge carriers in metal wires and many other electronic circuit components), therefore flow in the opposite direction of conventional current flow in an electrical circuit.
+
+=== Reference direction ===
+A current in a wire or circuit element can flow in either of two directions.  When defining a variable 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+ to represent the current, the direction representing positive current must be specified, usually by an arrow on the circuit schematic diagram.  This is called the reference direction of the current 
+  
+    
+      
+        I
+      
+    
+    {\displaystyle I}
+  
+.  When analyzing electrical circuits, the actual direction of current through a specific circuit element is usually unknown until the analysis is completed. Consequently, the reference directions of currents are often assigned arbitrarily. When the circuit is solved, a negative value for the current implies the actual direction of current through that circuit element is opposite that of the chosen reference direction.
+
+== Ohm's law ==

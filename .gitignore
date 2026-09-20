@@ -1,0 +1,45 @@
+# --- the corpus: never committed, never redistributed -------------------------------
+# Textbook PDFs and any text extracted from them stay on the machine that ingested them.
+# NCERT's terms prohibit republication and prohibit hosting their books as part of software.
+# See docs/adr/ADR-001-licensing-boundary.md.
+#
+# NOTE: do not ignore *.txt globally — that silently excludes requirements.txt and other
+# legitimate text files. Only corpus-derived material is excluded here. Extracted textbook text is
+# therefore caught by the licensing guard in .github/workflows/ci.yml rather than by .gitignore.
+corpus/
+*.pdf
+!data/demo-corpus/**
+!tests/fixtures/**
+
+# --- python -------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# --- node / next --------------------------------------------------------------------
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# --- local state --------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite
+*.db
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1294 @@
+{
+ "board": "CBSE",
+ "class": 10,
+ "note": "Syllabus structure only: chapter and section headings with page anchors, taken from the book's own layout. No textbook prose is stored here. Textbook text is ingested locally by whoever owns a copy; see docs/adr/ADR-001-licensing-boundary.md.",
+ "subjects": [
+  {
+   "id": "science",
+   "name": "Science",
+   "book_code": "jesc1",
+   "chapters": [
+    {
+     "no": 1,
+     "title": "Chemical Reactions and Equations",
+     "pdf": "jesc101.pdf",
+     "status": "ok",
+     "pages": 16,
+     "sections": [
+      {
+       "no": "1.1",
+       "title": "CHEMICAL EQUATIONS",
+       "page": 2
+      },
+      {
+       "no": "1.1.1",
+       "title": "Writing a Chemical Equation",
+       "page": 3
+      },
+      {
+       "no": "1.1.2",
+       "title": "Balanced Chemical Equations",
+       "page": 3
+      },
+      {
+       "no": "1.2",
+       "title": "TYPES OF CHEMICAL REACTIONS",
+       "page": 6
+      },
+      {
+       "no": "1.2.1",
+       "title": "Combination Reaction",
+       "page": 6
+      },
+      {
+       "no": "1.2.2",
+       "title": "Decomposition Reaction",
+       "page": 8
+      },
+      {
+       "no": "1.2.3",
+       "title": "Displacement Reaction",
+       "page": 10
+      },
+      {
+       "no": "1.2.4",
+       "title": "Double Displacement Reaction",
+       "page": 11
+      },
+      {
+       "no": "1.2.5",
+       "title": "Oxidation and Reduction",
+       "page": 12
+      },
+      {
+       "no": "1.3",
+       "title": "HAVE YOU OBSERVED THE EFFECTS OF OXIDATION",
+       "page": 13
+      },
+      {
+       "no": "1.3.1",
+       "title": "Corrosion",
+       "page": 13
+      },
+      {
+       "no": "1.3.2",
+       "title": "Rancidity",
+       "page": 13
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "title": "Acids, Bases and Salts",
+     "pdf": "jesc102.pdf",
+     "status": "ok",
+     "pages": 20,
+     "sections": [
+      {
+       "no": "2.1",
+       "title": "UNDERSTANDING THE CHEMICAL PROPERTIES OF ACIDS AND BASES",
+       "page": 2
+      },
+      {
+       "no": "2.1.1",
+       "title": "Acids and Bases in the Laboratory",
+       "page": 2
+      },
+      {
+       "no": "2.1.2",
+       "title": "How do Acids and Bases React with Metals?",
+       "page": 3
+      },
+      {
+       "no": "2.1.3",
+       "title": "How do Metal Carbonates and Metal",
+       "page": 4
+      },
+      {
+       "no": "2.1.4",
+       "title": "How do Acids and Bases React with each other?",
+       "page": 5
+      },
+      {
+       "no": "2.1.5",
+       "title": "Reaction of Metallic Oxides with Acids",
+       "page": 5
+      },
+      {
+       "no": "2.1.6",
+       "title": "Reaction of a Non-metallic Oxide with Base",
+       "page": 6
+      },
+      {
+       "no": "2.2",
+       "title": "WHAT DO ALL ACIDS AND ALL BASES HAVE IN COMMON?",
+       "page": 6
+      },
+      {
+       "no": "2.2.1",
+       "title": "What Happens to an Acid or a Base in a Water Solution?",
+       "page": 7
+      },
+      {
+       "no": "2.3",
+       "title": "HOW STRONG ARE ACID OR BASE SOLUTIONS?",
+       "page": 9
+      },
+      {
+       "no": "2.3.1",
+       "title": "Importance of pH in Everyday Life",
+       "page": 10
+      },
+      {
+       "no": "2.4",
+       "title": "MORE ABOUT SALTS",
+       "page": 12
+      },
+      {
+       "no": "2.4.1",
+       "title": "Family of Salts",
+       "page": 12
+      },
+      {
+       "no": "2.4.2",
+       "title": "pH of Salts",
+       "page": 13
+      },
+      {
+       "no": "2.4.3",
+       "title": "Chemicals from Common Salt",
+       "page": 13
+      },
+      {
+       "no": "2.4.4",
+       "title": "Are the Crystals of Salts really Dry?",
+       "page": 16
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "title": "Metals and Non-metals",
+     "pdf": "jesc103.pdf",
+     "status": "ok",
+     "pages": 21,
+     "sections": [
+      {
+       "no": "3.1",
+       "title": "PHYSICAL PROPERTIES",
+       "page": 1
+      },
+      {
+       "no": "3.1.1",
+       "title": "Metals",
+       "page": 1
+      },
+      {
+       "no": "3.1.2",
+       "title": "Non-metals",
+       "page": 3
+      },
+      {
+       "no": "3.2",
+       "title": "CHEMICAL PROPERTIES OF METALS",
+       "page": 4
+      },
+      {
+       "no": "3.2.1",
+       "title": "What happens when Metals are burnt in Air?",
+       "page": 5
+      },
+      {
+       "no": "3.2.2",
+       "title": "What happens when Metals react with Water?",
+       "page": 6
+      },
+      {
+       "no": "3.2.3",
+       "title": "What happens when Metals react with Acids?",
+       "page": 7
+      },
+      {
+       "no": "3.2.4",
+       "title": "How do Metals react with Solutions of other Metal",
+       "page": 8
+      },
+      {
+       "no": "3.2.5",
+       "title": "The Reactivity Series",
+       "page": 9
+      },
+      {
+       "no": "3.3",
+       "title": "HOW DO METALS AND NON-METALS REACT?",
+       "page": 10
+      },
+      {
+       "no": "3.3.1",
+       "title": "Properties of Ionic Compounds",
+       "page": 12
+      },
+      {
+       "no": "3.4.1",
+       "title": "Extraction of Metals",
+       "page": 13
+      },
+      {
+       "no": "3.4.2",
+       "title": "Enrichment of Ores",
+       "page": 14
+      },
+      {
+       "no": "3.4.3",
+       "title": "Extracting Metals Low in the Activity Series",
+       "page": 15
+      },
+      {
+       "no": "3.4.4",
+       "title": "Extracting Metals in the Middle of the Activity Series",
+       "page": 15
+      },
+      {
+       "no": "3.4.5",
+       "title": "Extracting Metals towards the Top of the",
+       "page": 16
+      },
+      {
+       "no": "3.4.6",
+       "title": "Refining of Metals",
+       "page": 16
+      },
+      {
+       "no": "3.5",
+       "title": "CORROSION",
+       "page": 17
+      },
+      {
+       "no": "3.5.1",
+       "title": "Prevention of Corrosion",
+       "page": 18
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "title": "Carbon and its Compounds",
+     "pdf": "jesc104.pdf",
+     "status": "ok",
+     "pages": 21,
+     "sections": [
+      {
+       "no": "4.1",
+       "title": "BONDING IN CARBON – THE COVALENT BOND",
+       "page": 1
+      },
+      {
+       "no": "4.2",
+       "title": "VERSATILE NATURE OF CARBON",
+       "page": 5
+      },
+      {
+       "no": "4.2.1",
+       "title": "Saturated and Unsaturated Carbon Compounds",
+       "page": 6
+      },
+      {
+       "no": "4.2.2",
+       "title": "Chains, Branches and Rings",
+       "page": 7
+      },
+      {
+       "no": "4.2.3",
+       "title": "Will you be my Friend?",
+       "page": 8
+      },
+      {
+       "no": "4.2.4",
+       "title": "Homologous Series",
+       "page": 9
+      },
+      {
+       "no": "4.2.5",
+       "title": "Nomenclature of Carbon Compounds",
+       "page": 10
+      },
+      {
+       "no": "4.3",
+       "title": "CHEMICAL PROPERTIES OF CARBON COMPOUNDS",
+       "page": 12
+      },
+      {
+       "no": "4.3.1",
+       "title": "Combustion",
+       "page": 12
+      },
+      {
+       "no": "4.3.2",
+       "title": "Oxidation",
+       "page": 13
+      },
+      {
+       "no": "4.3.3",
+       "title": "Addition Reaction",
+       "page": 14
+      },
+      {
+       "no": "4.3.4",
+       "title": "Substitution Reaction",
+       "page": 14
+      },
+      {
+       "no": "4.4",
+       "title": "SOME IMPORTANT CARBON COMPOUNDS – ETHANOL",
+       "page": 14
+      },
+      {
+       "no": "4.4.1",
+       "title": "Properties of Ethanol",
+       "page": 15
+      },
+      {
+       "no": "4.4.2",
+       "title": "Properties of Ethanoic Acid",
+       "page": 16
+      },
+      {
+       "no": "4.5",
+       "title": "SOAPS AND DETERGENTS",
+       "page": 17
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "title": "Life Processes",
+     "pdf": "jesc105.pdf",
+     "status": "ok",
+     "pages": 21,
+     "sections": [
+      {
+       "no": "5.1",
+       "title": "WHAT ARE LIFE PROCESSES?",
+       "page": 1
+      },
+      {
+       "no": "5.2",
+       "title": "NUTRITION",
+       "page": 3
+      },
+      {
+       "no": "5.2.1",
+       "title": "Autotrophic Nutrition",
+       "page": 3
+      },
+      {
+       "no": "5.2.2",
+       "title": "Heterotrophic Nutrition",
+       "page": 6
+      },
+      {
+       "no": "5.2.3",
+       "title": "How do Organisms obtain their Nutrition?",
+       "page": 6
+      },
+      {
+       "no": "5.2.4",
+       "title": "Nutrition in Human Beings",
+       "page": 6
+      },
+      {
+       "no": "5.3",
+       "title": "RESPIRATION",
+       "page": 9
+      },
+      {
+       "no": "5.4",
+       "title": "TRANSPORTATION",
+       "page": 13
+      },
+      {
+       "no": "5.4.1",
+       "title": "Transportation in Human Beings",
+       "page": 13
+      },
+      {
+       "no": "5.4.2",
+       "title": "Transportation in Plants",
+       "page": 16
+      },
+      {
+       "no": "5.5",
+       "title": "EXCRETION",
+       "page": 18
+      },
+      {
+       "no": "5.5.1",
+       "title": "Excretion in Human Beings",
+       "page": 18
+      },
+      {
+       "no": "5.5.2",
+       "title": "Excretion in Plants",
+       "page": 20
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "title": "Control and Coordination",
+     "pdf": "jesc106.pdf",
+     "status": "ok",
+     "pages": 13,
+     "sections": [
+      {
+       "no": "6.1",
+       "title": "ANIMALS – NERVOUS SYSTEM",
+       "page": 1
+      },
+      {
+       "no": "6.1.1",
+       "title": "What happens in Reflex Actions?",
+       "page": 3
+      },
+      {
+       "no": "6.1.2",
+       "title": "Human Brain",
+       "page": 4
+      },
+      {
+       "no": "6.1.3",
+       "title": "How are these Tissues protected?",
+       "page": 6
+      },
+      {
+       "no": "6.1.4",
+       "title": "How does the Nervous Tissue cause Action?",
+       "page": 6
+      },
+      {
+       "no": "6.2",
+       "title": "COORDINATION IN PLANTS",
+       "page": 6
+      },
+      {
+       "no": "6.2.1",
+       "title": "Immediate Response to Stimulus",
+       "page": 7
+      },
+      {
+       "no": "6.2.2",
+       "title": "Movement Due to Growth",
+       "page": 7
+      },
+      {
+       "no": "6.3",
+       "title": "HORMONES IN ANIMALS",
+       "page": 10
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "title": "How do Organisms Reproduce?",
+     "pdf": "jesc107.pdf",
+     "status": "ok",
+     "pages": 15,
+     "sections": [
+      {
+       "no": "7.1",
+       "title": "DO ORGANISMS CREATE EXACT COPIES OF THEMSELVES?",
+       "page": 1
+      },
+      {
+       "no": "7.1.1",
+       "title": "The Importance of Variation",
+       "page": 2
+      },
+      {
+       "no": "7.2",
+       "title": "MODES OF REPRODUCTION USED BY SINGLE",
+       "page": 3
+      },
+      {
+       "no": "7.2.1",
+       "title": "Fission",
+       "page": 3
+      },
+      {
+       "no": "7.2.2",
+       "title": "Fragmentation",
+       "page": 4
+      },
+      {
+       "no": "7.2.3",
+       "title": "Regeneration",
+       "page": 4
+      },
+      {
+       "no": "7.2.4",
+       "title": "Budding",
+       "page": 5
+      },
+      {
+       "no": "7.2.5",
+       "title": "Vegetative Propagation",
+       "page": 5
+      },
+      {
+       "no": "7.2.6",
+       "title": "Spore Formation",
+       "page": 6
+      },
+      {
+       "no": "7.3",
+       "title": "SEXUAL REPRODUCTION",
+       "page": 7
+      },
+      {
+       "no": "7.3.1",
+       "title": "Why the Sexual Mode of Reproduction?",
+       "page": 7
+      },
+      {
+       "no": "7.3.2",
+       "title": "Sexual Reproduction in Flowering Plants",
+       "page": 8
+      },
+      {
+       "no": "7.3.3",
+       "title": "Reproduction in Human Beings",
+       "page": 9
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "title": "Heredity and Evolution",
+     "pdf": "jesc108.pdf",
+     "status": "ok",
+     "pages": 6,
+     "sections": [
+      {
+       "no": "8.1",
+       "title": "ACCUMULATION OF VARIATION DURING REPRODUCTION",
+       "page": 1
+      },
+      {
+       "no": "8.2",
+       "title": "HEREDITY",
+       "page": 2
+      },
+      {
+       "no": "8.2.1",
+       "title": "Inherited Traits",
+       "page": 2
+      },
+      {
+       "no": "8.2.3",
+       "title": "How do these Traits get Expressed?",
+       "page": 4
+      },
+      {
+       "no": "8.2.4",
+       "title": "Sex Determination",
+       "page": 5
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "title": "Light - Reflection and Refraction",
+     "pdf": "jesc109.pdf",
+     "status": "ok",
+     "pages": 27,
+     "sections": [
+      {
+       "no": "9.1",
+       "title": "REFLECTION OF LIGHT",
+       "page": 1
+      },
+      {
+       "no": "9.2",
+       "title": "SPHERICAL MIRRORS",
+       "page": 2
+      },
+      {
+       "no": "9.2.1",
+       "title": "Image Formation by Spherical Mirrors",
+       "page": 4
+      },
+      {
+       "no": "9.2.2",
+       "title": "Representation of Images Formed by Spherical",
+       "page": 5
+      },
+      {
+       "no": "9.2.3",
+       "title": "Sign Convention for Reflection by Spherical Mirrors",
+       "page": 9
+      },
+      {
+       "no": "9.2.4",
+       "title": "Mirror Formula and Magnification",
+       "page": 10
+      },
+      {
+       "no": "9.3",
+       "title": "REFRACTION OF LIGHT",
+       "page": 12
+      },
+      {
+       "no": "9.3.1",
+       "title": "Refraction through a Rectangular Glass Slab",
+       "page": 13
+      },
+      {
+       "no": "9.3.2",
+       "title": "The Refractive Index",
+       "page": 15
+      },
+      {
+       "no": "9.3.3",
+       "title": "Refraction by Spherical Lenses",
+       "page": 17
+      },
+      {
+       "no": "9.3.4",
+       "title": "Image Formation by Lenses",
+       "page": 19
+      },
+      {
+       "no": "9.3.5",
+       "title": "Image Formation in Lenses Using Ray Diagrams",
+       "page": 20
+      },
+      {
+       "no": "9.3.6",
+       "title": "Sign Convention for Spherical Lenses",
+       "page": 22
+      },
+      {
+       "no": "9.3.7",
+       "title": "Lens Formula and Magnification",
+       "page": 22
+      },
+      {
+       "no": "9.3.8",
+       "title": "Power of a Lens",
+       "page": 24
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "title": "The Human Eye and the Colourful World",
+     "pdf": "jesc110.pdf",
+     "status": "ok",
+     "pages": 10,
+     "sections": [
+      {
+       "no": "10.1",
+       "title": "THE HUMAN EYE",
+       "page": 1
+      },
+      {
+       "no": "10.1.1",
+       "title": "Power of Accommodation",
+       "page": 2
+      },
+      {
+       "no": "10.2",
+       "title": "DEFECTS OF VISION AND THEIR CORRECTION",
+       "page": 2
+      },
+      {
+       "no": "10.3",
+       "title": "REFRACTION OF LIGHT THROUGH A PRISM",
+       "page": 5
+      },
+      {
+       "no": "10.4",
+       "title": "DISPERSION OF WHITE LIGHT BY A GLASS PRISM",
+       "page": 6
+      },
+      {
+       "no": "10.5",
+       "title": "ATMOSPHERIC REFRACTION",
+       "page": 8
+      },
+      {
+       "no": "10.6",
+       "title": "SCATTERING OF LIGHT",
+       "page": 9
+      },
+      {
+       "no": "10.6.1",
+       "title": "Tyndall Effect",
+       "page": 9
+      },
+      {
+       "no": "10.6.2",
+       "title": "Why is the colour of the clear Sky Blue?",
+       "page": 9
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "title": "Electricity",
+     "pdf": "jesc111.pdf",
+     "status": "ok",
+     "pages": 24,
+     "sections": [
+      {
+       "no": "11.1",
+       "title": "ELECTRIC CURRENT AND CIRCUIT",
+       "page": 1
+      },
+      {
+       "no": "11.2",
+       "title": "ELECTRIC POTENTIAL AND POTENTIAL DIFFERENCE",
+       "page": 3
+      },
+      {
+       "no": "11.3",
+       "title": "CIRCUIT DIAGRAM",
+       "page": 4
+      },
+      {
+       "no": "11.4",
+       "title": "OHM’S LAW",
+       "page": 5
+      },
+      {
+       "no": "11.5",
+       "title": "FACTORS ON WHICH THE RESISTANCE OF A CONDUCTOR DEPENDS",
+       "page": 7
+      },
+      {
+       "no": "11.6",
+       "title": "RESISTANCE OF A SYSTEM OF RESISTORS",
+       "page": 11
+      },
+      {
+       "no": "11.6.1",
+       "title": "Resistors in Series",
+       "page": 12
+      },
+      {
+       "no": "11.6.2",
+       "title": "Resistors in Parallel",
+       "page": 15
+      },
+      {
+       "no": "11.7",
+       "title": "HEATING EFFECT OF ELECTRIC CURRENT",
+       "page": 18
+      },
+      {
+       "no": "11.7.1",
+       "title": "Practical Applications of Heating Effect of",
+       "page": 20
+      },
+      {
+       "no": "11.8",
+       "title": "ELECTRIC POWER",
+       "page": 21
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "title": "Magnetic Effects of Electric Current",
+     "pdf": "jesc112.pdf",
+     "status": "ok",
+     "pages": 13,
+     "sections": [
+      {
+       "no": "12.1",
+       "title": "MAGNETIC FIELD AND FIELD LINES",
+       "page": 2
+      },
+      {
+       "no": "12.2",
+       "title": "MAGNETIC FIELD DUE TO A CURRENT-CARRYING CONDUCTOR",
+       "page": 3
+      },
+      {
+       "no": "12.2.1",
+       "title": "Magnetic Field due to a Current through a Straight",
+       "page": 4
+      },
+      {
+       "no": "12.2.2",
+       "title": "Right-Hand Thumb Rule",
+       "page": 5
+      },
+      {
+       "no": "12.2.3",
+       "title": "Magnetic Field due to a Current through a",
+       "page": 6
+      },
+      {
+       "no": "12.2.4",
+       "title": "Magnetic Field due to a Current in a Solenoid",
+       "page": 7
+      },
+      {
+       "no": "12.4",
+       "title": "DOMESTIC ELECTRIC CIRCUITS",
+       "page": 10
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "title": "Our Environment",
+     "pdf": "jesc113.pdf",
+     "status": "ok",
+     "pages": 10,
+     "sections": [
+      {
+       "no": "13.1",
+       "title": "ECO-SYSTEM — WHAT ARE ITS COMPONENTS?",
+       "page": 1
+      },
+      {
+       "no": "13.1.1",
+       "title": "Food Chains and Webs",
+       "page": 3
+      },
+      {
+       "no": "13.2",
+       "title": "HOW DO OUR ACTIVITIES AFFECT THE",
+       "page": 5
+      },
+      {
+       "no": "13.2.1",
+       "title": "Ozone Layer and How it is Getting Depleted",
+       "page": 5
+      },
+      {
+       "no": "13.2.2",
+       "title": "Managing the Garbage we Produce",
+       "page": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "maths",
+   "name": "Mathematics",
+   "book_code": "jemh1",
+   "chapters": [
+    {
+     "no": 1,
+     "title": "Real Numbers",
+     "pdf": "jemh101.pdf",
+     "status": "ok",
+     "pages": 9,
+     "sections": [
+      {
+       "no": "1.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "1.2",
+       "title": "The Fundamental Theorem of Arithmetic",
+       "page": 2
+      },
+      {
+       "no": "1.3",
+       "title": "Revisiting Irrational Numbers",
+       "page": 6
+      },
+      {
+       "no": "1.4",
+       "title": "Summary",
+       "page": 9
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "title": "Polynomials",
+     "pdf": "jemh102.pdf",
+     "status": "ok",
+     "pages": 14,
+     "sections": [
+      {
+       "no": "2.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "2.2",
+       "title": "Geometrical Meaning of the Zeroes of a Polynomial",
+       "page": 2
+      },
+      {
+       "no": "2.3",
+       "title": "Relationship between Zeroes and Coefficients of a Polynomial",
+       "page": 9
+      },
+      {
+       "no": "2.4",
+       "title": "Summary",
+       "page": 14
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "title": "Pair of Linear Equations in Two Variables",
+     "pdf": "jemh103.pdf",
+     "status": "ok",
+     "pages": 14,
+     "sections": [
+      {
+       "no": "3.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "3.2",
+       "title": "Graphical Method of Solution of a Pair of Linear Equations",
+       "page": 2
+      },
+      {
+       "no": "3.3",
+       "title": "Algebraic Methods of Solving a Pair of Linear Equations",
+       "page": 7
+      },
+      {
+       "no": "3.3.2",
+       "title": "Elimination Method",
+       "page": 11
+      },
+      {
+       "no": "3.4",
+       "title": "Summary",
+       "page": 14
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "title": "Quadratic Equations",
+     "pdf": "jemh104.pdf",
+     "status": "ok",
+     "pages": 11,
+     "sections": [
+      {
+       "no": "4.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "4.2",
+       "title": "Quadratic Equations",
+       "page": 2
+      },
+      {
+       "no": "4.3",
+       "title": "Solution of a Quadratic Equation by Factorisation",
+       "page": 5
+      },
+      {
+       "no": "4.4",
+       "title": "Nature of Roots",
+       "page": 7
+      },
+      {
+       "no": "4.5",
+       "title": "Summary",
+       "page": 10
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "title": "Arithmetic Progressions",
+     "pdf": "jemh105.pdf",
+     "status": "ok",
+     "pages": 24,
+     "sections": [
+      {
+       "no": "5.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "5.2",
+       "title": "Arithmetic Progressions",
+       "page": 3
+      },
+      {
+       "no": "5.3",
+       "title": "th Term of an AP",
+       "page": 8
+      },
+      {
+       "no": "5.4",
+       "title": "Sum of First Terms of an AP",
+       "page": 15
+      },
+      {
+       "no": "5.5",
+       "title": "Summary",
+       "page": 24
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "title": "Triangles",
+     "pdf": "jemh106.pdf",
+     "status": "ok",
+     "pages": 26,
+     "sections": [
+      {
+       "no": "6.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "6.2",
+       "title": "Similar Figures",
+       "page": 2
+      },
+      {
+       "no": "6.3",
+       "title": "Similarity of Triangles",
+       "page": 7
+      },
+      {
+       "no": "6.4",
+       "title": "Criteria for Similarity of Triangles",
+       "page": 13
+      },
+      {
+       "no": "6.5",
+       "title": "Summary",
+       "page": 25
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "title": "Coordinate Geometry",
+     "pdf": "jemh107.pdf",
+     "status": "ok",
+     "pages": 14,
+     "sections": [
+      {
+       "no": "7.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "7.2",
+       "title": "Distance Formula",
+       "page": 2
+      },
+      {
+       "no": "7.3",
+       "title": "Section Formula",
+       "page": 8
+      },
+      {
+       "no": "7.4",
+       "title": "Summary",
+       "page": 14
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "title": "Introduction to Trigonometry",
+     "pdf": "jemh108.pdf",
+     "status": "ok",
+     "pages": 20,
+     "sections": [
+      {
+       "no": "8.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "8.2",
+       "title": "Trigonometric Ratios",
+       "page": 2
+      },
+      {
+       "no": "8.3",
+       "title": "Trigonometric Ratios of Some Specific Angles",
+       "page": 9
+      },
+      {
+       "no": "8.4",
+       "title": "Trigonometric Identities",
+       "page": 16
+      },
+      {
+       "no": "8.5",
+       "title": "Summary",
+       "page": 20
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "title": "Some Applications of Trigonometry",
+     "pdf": "jemh109.pdf",
+     "status": "ok",
+     "pages": 11,
+     "sections": [
+      {
+       "no": "9.1",
+       "title": "Heights and Distances",
+       "page": 1
+      },
+      {
+       "no": "9.2",
+       "title": "Summary",
+       "page": 11
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "title": "Circles",
+     "pdf": "jemh110.pdf",
+     "status": "ok",
+     "pages": 10,
+     "sections": [
+      {
+       "no": "10.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "10.2",
+       "title": "Tangent to a Circle",
+       "page": 2
+      },
+      {
+       "no": "10.3",
+       "title": "Number of Tangents from a Point on a Circle",
+       "page": 4
+      },
+      {
+       "no": "10.4",
+       "title": "Summary",
+       "page": 10
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "title": "Areas Related to Circles",
+     "pdf": "jemh111.pdf",
+     "status": "ok",
+     "pages": 7,
+     "sections": [
+      {
+       "no": "11.1",
+       "title": "Areas of Sector and Segment of a Circle",
+       "page": 1
+      },
+      {
+       "no": "11.2",
+       "title": "Summary",
+       "page": 7
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "title": "Surface Areas and Volumes",
+     "pdf": "jemh112.pdf",
+     "status": "ok",
+     "pages": 10,
+     "sections": [
+      {
+       "no": "12.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "12.2",
+       "title": "Surface Area of a Combination of Solids",
+       "page": 2
+      },
+      {
+       "no": "12.3",
+       "title": "Volume of a Combination of Solids",
+       "page": 7
+      },
+      {
+       "no": "12.4",
+       "title": "Summary",
+       "page": 10
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "title": "Statistics",
+     "pdf": "jemh113.pdf",
+     "status": "ok",
+     "pages": 31,
+     "sections": [
+      {
+       "no": "13.1",
+       "title": "Introduction",
+       "page": 1
+      },
+      {
+       "no": "13.2",
+       "title": "Mean of Grouped Data",
+       "page": 1
+      },
+      {
+       "no": "13.3",
+       "title": "Mode of Grouped Data",
+       "page": 13
+      },
+      {
+       "no": "13.4",
+       "title": "Median of Grouped Data",
+       "page": 18
+      },
+      {
+       "no": "13.5",
+       "title": "Summary",
+       "page": 30
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "title": "Probability",
+     "pdf": "jemh114.pdf",
+     "status": "ok",
+     "pages": 16,
+     "sections": [
+      {
+       "no": "14.1",
+       "title": "Probability — A Theoretical Approach",
+       "page": 1
+      },
+      {
+       "no": "14.2",
+       "title": "Summary",
+       "page": 16
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

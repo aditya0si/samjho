@@ -1,0 +1,62 @@
+# source: https://en.wikipedia.org/wiki/Ohm%27s_law
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 11 — Electricity: Ohm's law
+
+Ohm's law states that in a well-behaved conductor (a so-called ohmic conductor), the electric current between two points is directly proportional to the voltage (the difference of electric potential) across the two points. Introducing the constant of proportionality, the resistance, one arrives at the following mathematical equation used to describe this relationship:
+
+  
+    
+      
+        V
+        =
+        I
+        R
+      
+    
+    {\displaystyle V=IR}
+  
+
+or, equivalently, at the same equation expressed in terms of the reciprocal constant of proportionality, the electrical conductance,
+
+  
+    
+      
+        I
+        =
+        G
+        V
+      
+    
+    {\displaystyle I=GV}
+  
+
+where I is the current through the conductor, V is the voltage measured across the conductor, R is the resistance of the conductor, and G=1/R is the conductance of the conductor. More specifically, Ohm's law states that the R (or, equivalently, G) in this relation is constant, independent of the current. If the resistance is not constant, the previous equation cannot be called Ohm's law, but it can still be used as a definition of static/DC resistance. Ohm's law is an empirical relation which accurately describes the conductivity of the vast majority of electrically conductive materials over many orders of magnitude of current. However some materials do not obey Ohm's law; these are called non-ohmic.
+The law was named after the German physicist Georg Ohm, who, in a treatise published in 1827, described measurements of applied voltage and current through simple electrical circuits containing various lengths of wire. Ohm explained his experimental results by a slightly more complex equation than the modern form above (see History below).
+In physics, the term Ohm's law is also used to refer to various generalizations of the law; for example the vector form of the law used in electromagnetics and material science:
+
+  
+    
+      
+        
+          J
+        
+        =
+        σ
+        
+          E
+        
+        ,
+      
+    
+    {\displaystyle \mathbf {J} =\sigma \mathbf {E} ,}
+  
+
+where J is the current density at a given location in a resistive material, E is the electric field at that location, and σ (sigma) is a material-dependent parameter called the conductivity, defined as the inverse of resistivity ρ (rho). This reformulation of Ohm's law is due to Gustav Kirchhoff.
+
+== History ==
+
+In January 1781, before Georg Ohm's work, Henry Cavendish experimented with Leyden jars and glass tubes of varying diameter and length filled with salt solution. He measured the current by noting how strong a shock he felt as he completed the circuit with his body. Cavendish wrote that the "velocity" (current) varied directly as the "degree of electrification" (voltage). He did not communicate his results to other scientists at the time, and his results were unknown until James Clerk Maxwell published them in 1879.
+Francis Ronalds delineated "intensity" (voltage) and "quantity" (current) for the dry pile—a high voltage source—in 1814 using a gold-leaf electrometer. He found for a dry pile that the relationship between the two parameters was not proportional under certain meteorological conditions.
+Ohm did his work on resistance in the years 1825 and 1826, and published his results in 1827 as the book Die galvanische Kette, mathematisch bearbeitet ("The galvanic circuit investigated mathematically"). He drew considerable inspiration from Joseph Fourier's work on heat conduction in the theoretical explanation of his work. For experiments, he initially used voltaic piles, but later used a thermocouple as this provided a more stable voltage source in terms of internal resistance and constant voltage. He used a galvanometer to measure current, and knew that the voltage between the thermocouple terminals was proportional to the junction temperature. He then added test wires of varying length, diameter, and material to complete the circuit. He found that his data could be modeled through the equation

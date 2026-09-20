@@ -1,0 +1,7 @@
+# Keep the build context small and deterministic: the image builds its own node_modules and .next.
+node_modules
+.next
+*.tsbuildinfo
+.git
+Dockerfile
+.dockerignore

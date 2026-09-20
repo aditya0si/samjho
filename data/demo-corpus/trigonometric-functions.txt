@@ -1,0 +1,161 @@
+# source: https://en.wikipedia.org/wiki/Trigonometric_functions
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Maths Ch 8 — Introduction to trigonometry
+
+In mathematics, the trigonometric functions (also called circular functions, angle functions or goniometric functions) are real functions which relate an angle of a right-angled triangle to ratios of two side lengths. They are widely used in all sciences that are related to geometry, such as navigation, solid mechanics, celestial mechanics, geodesy, and many others. They are among the simplest periodic functions, and are widely used for studying periodic phenomena through Fourier analysis.
+
+The trigonometric functions most commonly used in modern mathematics are the sine, the cosine, and the tangent functions. Their reciprocals are respectively the cosecant, the secant, and the cotangent functions, which are less commonly used. Each of these six trigonometric functions has a corresponding inverse function and has an analog among the hyperbolic functions.
+The oldest definitions of trigonometric functions, related to right-angle triangles, define them only for acute angles. To extend the sine and cosine functions to functions whose domain is the whole real line, geometrical definitions using the standard unit circle (i.e., a circle with radius 1 unit) are often used; then the domain of the other functions is the real line with some isolated points removed. Modern definitions express trigonometric functions as infinite series or as solutions of differential equations. This allows extending the domain of sine and cosine functions to the whole complex plane, and the domain of the other trigonometric functions to the complex plane with some isolated points removed.
+
+== Notation ==
+Conventionally, an abbreviation of each trigonometric function's name is used as its symbol in formulas. Today, the most common versions of these abbreviations are "sin" for sine, "cos" for cosine, "tan" or "tg" for tangent, "sec" for secant, "csc" or "cosec" for cosecant, and "cot" or "ctg" for cotangent. Historically, these abbreviations were first used in prose sentences to indicate particular line segments or their lengths related to an arc of an arbitrary circle, and later to indicate ratios of lengths, but as the function concept developed in the 17th–18th century, they began to be considered as functions of real-number-valued angle measures, and written with functional notation, for example sin(x). Parentheses are still often omitted to reduce clutter, but are sometimes necessary; for example the expression 
+  
+    
+      
+        sin
+        ⁡
+        x
+        +
+        y
+      
+    
+    {\displaystyle \sin x+y}
+  
+ would typically be interpreted to mean 
+  
+    
+      
+        (
+        sin
+        ⁡
+        x
+        )
+        +
+        y
+        ,
+      
+    
+    {\displaystyle (\sin x)+y,}
+  
+ so parentheses are required to express 
+  
+    
+      
+        sin
+        ⁡
+        (
+        x
+        +
+        y
+        )
+        .
+      
+    
+    {\displaystyle \sin(x+y).}
+  
+
+A positive integer appearing as a superscript after the symbol of the function denotes exponentiation, not function composition. For example 
+  
+    
+      
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        x
+      
+    
+    {\displaystyle \sin ^{2}x}
+  
+ and 
+  
+    
+      
+        
+          sin
+          
+            2
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\displaystyle \sin ^{2}(x)}
+  
+ denote 
+  
+    
+      
+        (
+        sin
+        ⁡
+        x
+        
+          )
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle (\sin x)^{2},}
+  
+ not 
+  
+    
+      
+        sin
+        ⁡
+        (
+        sin
+        ⁡
+        x
+        )
+        .
+      
+    
+    {\displaystyle \sin(\sin x).}
+  
+ This differs from the (historically later) general functional notation in which 
+  
+    
+      
+        
+          f
+          
+            2
+          
+        
+        (
+        x
+        )
+        =
+        (
+        f
+        ∘
+        f
+        )
+        (
+        x
+        )
+        =
+        f
+        (
+        f
+        (
+        x
+        )
+        )
+        .
+      
+    
+    {\displaystyle f^{2}(x)=(f\circ f)(x)=f(f(x)).}

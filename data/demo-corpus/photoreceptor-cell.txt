@@ -1,0 +1,15 @@
+# source: https://en.wikipedia.org/wiki/Photoreceptor_cell
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 10 — the eye: rods and cones
+
+A photoreceptor cell is a specialized type of neuroepithelial cell  found in the retina that is capable of visual phototransduction. The great biological importance of photoreceptors is that they convert light (visible electromagnetic radiation) into signals that can stimulate biological processes. To be more specific, photoreceptor proteins in the cell absorb photons, triggering a change in the cell's membrane potential.
+There are currently three known types of photoreceptor cells in mammalian eyes: rods, cones, and intrinsically photosensitive retinal ganglion cells. The two classic photoreceptor cells are rods and cones, each contributing information used by the visual system to form an image of the environment, sight. Rods primarily mediate scotopic vision (dim conditions) whereas cones primarily mediate photopic vision (bright conditions), but the processes in each that supports phototransduction is similar. Rods are slender and slide between the cones, however, the cones of the fovea are even thinner than rods.  The intrinsically photosensitive retinal ganglion cells were discovered during the 1990s. These cells are thought not to contribute to sight directly, but have a role in the entrainment of the circadian rhythm and the pupillary reflex.
+
+== Photosensitivity ==
+
+Each photoreceptor absorbs light according to its spectral sensitivity (absorptance), which is determined by the photoreceptor proteins expressed in that cell. Humans have three classes of cones (L, M, S) that each differ in spectral sensitivity and 'prefer' photons of different wavelengths (see graph). For example, the peak wavelength of the S-cone's spectral sensitivity is approximately 420 nm (nanometers, a measure of wavelength), so it is more likely to absorb a photon at 420 nm than at any other wavelength. Light of a longer wavelength can also produce the same response from an S-cone, but it would have to be brighter to do so.
+In accordance with the principle of univariance, a photoreceptor's output signal is proportional only to the number of photons absorbed. The photoreceptors cannot measure the wavelength of light that it absorbs and therefore does not detect color on its own. Rather, it is the ratios of responses of the three types of cone cells that can estimate wavelength, and therefore enable color vision.
+
+== Histology ==

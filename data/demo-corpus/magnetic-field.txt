@@ -1,0 +1,40 @@
+# source: https://en.wikipedia.org/wiki/Magnetic_field
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 12 — Magnetic effects of current
+
+In magnetism and electromagnetism, magnetic field is a physical property of space that quantifies the magnetic influence at a given location.  
+Magnetic fields 
+
+deflect moving electric charges (including electric currents)
+apply torques on magnets to twist them in the direction of the magnetic field
+attract or repel magnets and magnetic material such as iron
+induce electric currents in electically conducting material.
+Magnetic fields are created by
+
+permanent magnetic materials
+moving electric charges (including electric current).
+Magnetic fields are used throughout modern science and technology. In electrical engineering and electromechanics, it is important in the design and use of electric motors, generators, transformers, electromagnets, and inductors among many other devices. In material science, magnetic forces give information about the charge carriers in a material through the Hall effect in addition to other uses.
+In geology and geophysics, Earth's magnetic field gives information about earth's interior while local magnetic field measurements are used in mineral exploration and other measurements. Too, Earth's magnetic field creates a magnetosphere which shields the Earth's ozone layer and the rest of the planet from the solar wind. In physics, the relationship between the magnetic and electric fields forms the field of electrodynamics which is important to understand a wide range of phenomena including light (also known as electromagnetic radiation) and the properties of antenna and transmission lines.
+Since both strength and direction of a magnetic field may vary with location, it is described mathematically by assigning a vector to each point of space, making it a vector field. There are two different, but closely related, vector fields which together or separately are called "magnetic field". These are written as B and H. While the best names for these fields is the subject of long running debate, the underlying physics is uncontested.
+
+== Definitions ==
+
+The international ISO 80000-6 standard defines magnetic field as "that component of an electromagnetic field which is characterized by the magnetic field strength vector H and the magnetic flux density vector B." This standard also defines B and H as given in the sections below. While there is wide agreement on these definitions of B and H, there are many alternative names for both (see sidebars in the corresponding sections).
+
+=== The B-field ===
+
+Also known as magnetic flux density, the magnetic B field causes magnetic forces, magnetic torques and electromagnetic induction. Therefore, it can be defined by any equation that describes these phenomena.
+For example, the magnetic field vector B at any point can be defined as the vector field that, when used in the Lorentz force law, correctly predicts the force on a moving charged particle at that point:
+
+Here F is the force on the particle, q is the particle's electric charge, E is the external electric field, v, is the particle's velocity, and × denotes the cross product. 
+In other words,
+
+[T]he command, "Measure the direction and magnitude of the vector B at such and such a place," calls for the following operations: Take a particle of known charge q. Measure the force on q at rest, to determine E. Then measure the force on the particle when its velocity is v; repeat with v in some other direction. Now find a B that makes the Lorentz force law fit all these results—that is the magnetic field at the place in question.
+For more details see Lorentz Force or the § Magnetic force on a charged particle section below.
+The SI unit of B is tesla (symbol: T). The Gaussian-cgs unit of B is the gauss (symbol: G). (The conversion is 1 T ≘ 10000 G.) One nanotesla corresponds to 1 gamma (symbol: γ).
+
+=== The H-field ===
+
+While B creates magnetic forces and torques on objects and induces currents in conducting wires, it is not always easy to calculate. For this reason, it is useful to define a magnetic H field, also known as magnetic field strength, such that:

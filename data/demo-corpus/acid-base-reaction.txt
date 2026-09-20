@@ -1,0 +1,30 @@
+# source: https://en.wikipedia.org/wiki/Acid%E2%80%93base_reaction
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 2 — Acids, bases and salts
+
+In chemistry, an acid–base reaction is a chemical reaction that occurs between an acid and a base. It can be used to determine pH via titration. Several theoretical frameworks provide alternative conceptions of the reaction mechanisms and their application in solving related problems; these are called the acid–base theories, for example, Brønsted–Lowry acid–base theory.
+Their importance becomes apparent in analyzing acid–base reactions for gaseous or liquid species, or when acid or base character may be somewhat less apparent. The first of these concepts was provided by the French chemist Antoine Lavoisier, around 1776.
+It is important to think of the acid–base reaction models as theories that complement each other. For example, the current Lewis model has the broadest definition of what an acid and base are, with the Brønsted–Lowry theory being a subset of what acids and bases are, and the Arrhenius theory being the most restrictive.
+The Arrhenius theory describes an acid as a substance that increases the concentration of hydrogen ions (H3O+ or H+) in a solution.
+A base is a substance that increases the concentration of hydroxide ions (OH-) in a solution. However, Arrhenius's definition only applies to substances that are in water.
+
+== Acid–base definitions ==
+
+=== Historic development ===
+The concept of an acid–base reaction was first proposed in 1754 by Guillaume-François Rouelle, who introduced the word "base" into chemistry to mean a substance which reacts with an acid to give it solid form (as a salt). Bases are mostly bitter in nature.
+
+==== Lavoisier's oxygen theory of acids ====
+The first scientific concept of acids and bases was provided by Lavoisier in around 1776. Since Lavoisier's knowledge of strong acids was mainly restricted to oxoacids, such as HNO3 (nitric acid) and H2SO4 (sulfuric acid), which tend to contain central atoms in high oxidation states surrounded by oxygen, and since he was not aware of the true composition of the hydrohalic acids (HF, HCl, HBr, and HI), he defined acids in terms of their containing oxygen, which in fact he named from Greek words meaning "acid-former" (from Greek  ὀξύς (oxys) 'acid, sharp' and  γεινομαι (geinomai) 'engender'). The Lavoisier definition held for over 30 years, until the 1810 article and subsequent lectures by Sir Humphry Davy in which he proved the lack of oxygen in hydrogen sulfide (H2S), hydrogen telluride (H2Te), and the hydrohalic acids. However, Davy failed to develop a new theory, concluding that "acidity does not depend upon any particular elementary substance, but upon peculiar arrangement of various substances". One notable modification of oxygen theory was provided by Jöns Jacob Berzelius, who stated that acids are oxides of nonmetals while bases are oxides of metals.
+
+==== Liebig's hydrogen theory of acids ====
+In 1838, Justus von Liebig proposed that an acid is a hydrogen-containing compound whose hydrogen can be replaced by a metal. This redefinition was based on his extensive work on the chemical composition of organic acids, finishing the doctrinal shift from oxygen-based acids to hydrogen-based acids started by Davy. Liebig's definition, while completely empirical, remained in use for almost 50 years until the adoption of the Arrhenius definition.
+
+=== Arrhenius definition ===
+
+The first modern definition of acids and bases in molecular terms was devised by Svante Arrhenius. A hydrogen theory of acids, it followed from his 1884 work with Friedrich Wilhelm Ostwald in establishing the presence of ions in aqueous solution and led to Arrhenius receiving the Nobel Prize in Chemistry in 1903.
+As defined by Arrhenius:
+
+An Arrhenius acid is a substance that ionises in water to form hydrogen cations (H+); that is, an acid increases the concentration of H+ ions in an aqueous solution.
+This causes the protonation of water, or the creation of the hydronium (H3O+) ion. Thus, in modern times, the symbol H+ is interpreted as a shorthand for H3O+, because it is now known that a bare proton does not exist as a free species in aqueous solution. This is the species which is measured by pH indicators to measure the acidity or basicity of a solution.

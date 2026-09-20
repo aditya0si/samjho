@@ -1,0 +1,165 @@
+# source: https://en.wikipedia.org/wiki/Refraction
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Science Ch 9 — Light: refraction
+
+In physics, refraction is the redirection of a wave as it passes from one medium to another. The redirection can be caused by the wave's change in speed or by a change in the medium. Refraction of light is the most commonly observed phenomenon, but other waves such as sound waves and water waves also experience refraction. How much a wave is refracted is determined by the change in wave speed and the initial direction of wave propagation relative to the direction of change in speed.
+Optical prisms and lenses use refraction to redirect light, as does the human eye. The refractive index of materials varies with the wavelength of light, and thus the angle of the refraction also varies correspondingly. This is called dispersion and allows certain prisms and raindrops in rainbows to divide white light into its constituent spectral colors.
+
+== Law ==
+ 
+For light, refraction follows Snell's law, which states that, for a given pair of media, the ratio of the sines of the angle of incidence 
+  
+    
+      
+        
+          
+            θ
+            
+              1
+            
+          
+        
+      
+    
+    {\displaystyle {\theta _{1}}}
+  
+ and angle of refraction 
+  
+    
+      
+        
+          
+            θ
+            
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\theta _{2}}}
+  
+ is equal to the ratio of phase velocities 
+  
+    
+      
+        
+          
+            
+              v
+              
+                1
+              
+            
+            
+              v
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\textstyle {\frac {v_{1}}{v_{2}}}}
+  
+ in the two media, or equivalently, to the refractive indices 
+  
+    
+      
+        
+          
+            
+              n
+              
+                2
+              
+            
+            
+              n
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\textstyle {\frac {n_{2}}{n_{1}}}}
+  
+ of the two media:
+
+  
+    
+      
+        
+          
+            
+              sin
+              ⁡
+              
+                θ
+                
+                  1
+                
+              
+            
+            
+              sin
+              ⁡
+              
+                θ
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        
+          
+            
+              v
+              
+                1
+              
+            
+            
+              v
+              
+                2
+              
+            
+          
+        
+        =
+        
+          
+            
+              n
+              
+                2
+              
+            
+            
+              n
+              
+                1
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\sin \theta _{1}}{\sin \theta _{2}}}={\frac {v_{1}}{v_{2}}}={\frac {n_{2}}{n_{1}}}}
+  
+
+== General explanation ==
+
+Refraction involves two related parts, both a result of the wave nature of light: a reduced speed in an optical medium and a change in angle when a wave front crosses between different media at an angle.
+
+Light slows as it travels through a medium other than vacuum (such as air, glass or water). This is not because of scattering or absorption. Rather it is because, as an electromagnetic oscillation, light itself causes other electrically charged particles such as electrons, to oscillate. The oscillating electrons emit their own electromagnetic waves  which interact with the original light. The resulting combined wave has a lower speed. When light returns to a vacuum and there are no electrons nearby, this slowing effect ends and its speed returns to c.
+When light enters a slower medium at an angle, one side of the wavefront is slowed before the other. This asymmetrical slowing of the light causes it to change the angle of its travel. Once light is within the new medium with constant properties, it travels in a straight line again.

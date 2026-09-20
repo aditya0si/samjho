@@ -1,0 +1,15 @@
+{"question": "Integrate x sin x with respect to x.", "reason": "out_of_syllabus"}
+{"question": "Find the derivative of tan(x^2 + 1) with respect to x.", "reason": "out_of_syllabus"}
+{"question": "Solve 2x + 3y = 8 and x - y = 1 using determinants (Cramer's rule).", "reason": "out_of_syllabus"}
+{"question": "What are the possible values of the magnetic quantum number for an electron in a 3d orbital?", "reason": "out_of_syllabus"}
+{"question": "State and explain the first law of thermodynamics for an adiabatic process.", "reason": "out_of_syllabus"}
+{"question": "Define Avogadro's number and calculate the number of molecules present in 8 g of oxygen gas.", "reason": "out_of_syllabus"}
+{"question": "Using the ICSE Class 10 syllabus, state the modern periodic law and write the electronic configuration of chlorine.", "reason": "other_board"}
+{"question": "Following the IGCSE Additional Mathematics syllabus, explain the difference between a permutation and a combination.", "reason": "other_board"}
+{"question": "As per the Kerala State Board Class 10 textbook, explain the working of a nuclear reactor.", "reason": "other_board"}
+{"question": "In the ICSE Class 10 Mathematics syllabus, state the factor theorem and use it to factorise a cubic polynomial.", "reason": "other_board"}
+{"question": "What is the capital of Australia?", "reason": "not_course_material"}
+{"question": "Which team won the ICC Men's Cricket World Cup in 2023?", "reason": "not_course_material"}
+{"question": "Write a Python function that reverses a string.", "reason": "not_course_material"}
+{"question": "Which are the best engineering colleges in India for a degree in computer science?", "reason": "not_course_material"}
+{"question": "What is the share price of Infosys today?", "reason": "not_course_material"}

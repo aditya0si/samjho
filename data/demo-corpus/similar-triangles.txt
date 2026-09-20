@@ -1,0 +1,102 @@
+# source: https://en.wikipedia.org/wiki/Similarity_%28geometry%29
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Maths Ch 6 — Triangles
+
+In Euclidean geometry, two objects are similar if they have the same shape, or if one has the same shape as the mirror image of the other. More precisely, one can be obtained from the other by uniformly scaling (enlarging or reducing), possibly with additional translation, rotation and reflection. This means that either object can be rescaled, repositioned, and reflected, so as to coincide precisely with the other object. If two objects are similar, each is congruent to the result of a particular uniform scaling of the other.
+
+For example, all circles are similar to each other, all squares are similar to each other, and all equilateral triangles are similar to each other. On the other hand, ellipses are not generally similar to each other, rectangles are not generally similar to each other, and isosceles triangles are not generally similar to each other. This is because two ellipses can have different width to height ratios, two rectangles can have different length to breadth ratios, and two isosceles triangles can have different base angles. 
+
+If two angles of a triangle have measures equal to the measures of two angles of another triangle, then the triangles are similar. Corresponding sides of similar polygons are in proportion, and corresponding angles of similar polygons have the same measure.
+Two congruent shapes are similar, with a scale factor of 1. However, some school textbooks specifically exclude congruent triangles from their definition of similar triangles by insisting that the sizes must be different if the triangles are to qualify as similar.
+
+== Similar triangles ==
+Two triangles, △ABC and △A'B'C' are similar if and only if corresponding angles have the same measure: this implies that they are similar if and only if the lengths of corresponding sides are proportional. It can be shown that two triangles having congruent angles (equiangular triangles) are similar, that is, the corresponding sides can be proved to be proportional. This is known as the AAA similarity theorem. Note that the "AAA" is a mnemonic: each one of the three A's refers to an "angle". Due to this theorem, several authors simplify the definition of similar triangles to only require that the corresponding three angles are congruent.
+There are several criteria each of which is necessary and sufficient for two triangles to be similar:
+
+Any two pairs of angles are congruent, which in Euclidean geometry implies that all three angles are congruent:
+If ∠BAC is equal in measure to ∠B'A'C', and ∠ABC is equal in measure to ∠A'B'C', then this implies that ∠ACB is equal in measure to ∠A'C'B' and the triangles are similar.
+All the corresponding sides are proportional:
+
+  
+    
+      
+        
+          
+            
+              
+                A
+                B
+              
+              ¯
+            
+            
+              
+                
+                  A
+                  ′
+                
+                
+                  B
+                  ′
+                
+              
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              
+                B
+                C
+              
+              ¯
+            
+            
+              
+                
+                  B
+                  ′
+                
+                
+                  C
+                  ′
+                
+              
+              ¯
+            
+          
+        
+        =
+        
+          
+            
+              
+                A
+                C
+              
+              ¯
+            
+            
+              
+                
+                  A
+                  ′
+                
+                
+                  C
+                  ′
+                
+              
+              ¯
+            
+          
+        
+        .
+      
+    
+    {\displaystyle {\frac {\overline {AB}}{\overline {A'B'}}}={\frac {\overline {BC}}{\overline {B'C'}}}={\frac {\overline {AC}}{\overline {A'C'}}}.}

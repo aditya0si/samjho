@@ -1,0 +1,153 @@
+# source: https://en.wikipedia.org/wiki/Quadratic_equation
+# licence: CC BY-SA 4.0
+# retrieved: 2026-09-20
+# note: extracted from the Wikipedia article named above and redistributed under CC BY-SA 4.0. This file is the DEMO corpus — it is not textbook content, and the product's real corpus is supplied by the student.
+# class10 hook: Maths Ch 4 — Quadratic equations
+
+In mathematics, a quadratic equation (from Latin  quadratus 'square') is an equation that can be rearranged in standard form as
+
+  
+    
+      
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        =
+        0
+        
+        ,
+      
+    
+    {\displaystyle ax^{2}+bx+c=0\,,}
+  
+
+where the variable ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠ represents an unknown number, and a, b, and c represent known numbers, where a ≠ 0. (If a = 0 and b ≠ 0 then the equation is linear, not quadratic.) The numbers a, b, and c are the coefficients of the equation and may be distinguished by calling them the quadratic coefficient, the linear coefficient and the constant coefficient or free term, respectively.
+The values of ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠ that satisfy the equation are called solutions of the equation, and roots or zeros of the quadratic function on its left-hand side. A quadratic equation has at most two solutions. If there is only one solution, one says that it is a double root. If all the coefficients are real numbers, there are either two real solutions, or a real double root, or two complex solutions that are complex conjugates of each other. A quadratic equation always has two roots, if complex roots are included and a double root is counted for two. A quadratic equation can be factored into an equivalent equation 
+
+  
+    
+      
+        a
+        
+          x
+          
+            2
+          
+        
+        +
+        b
+        x
+        +
+        c
+        =
+        a
+        (
+        x
+        −
+        r
+        )
+        (
+        x
+        −
+        s
+        )
+        =
+        0
+      
+    
+    {\displaystyle ax^{2}+bx+c=a(x-r)(x-s)=0}
+  
+
+where r and s are the solutions for ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠. 
+The quadratic formula
+
+  
+    
+      
+        x
+        =
+        
+          
+            
+              −
+              b
+              ±
+              
+                
+                  
+                    b
+                    
+                      2
+                    
+                  
+                  −
+                  4
+                  a
+                  c
+                
+              
+            
+            
+              2
+              a
+            
+          
+        
+      
+    
+    {\displaystyle x={\frac {-b\pm {\sqrt {b^{2}-4ac}}}{2a}}}
+  
+
+expresses the solutions in terms of a, b, and c. Completing the square is one of several ways for deriving the formula.
+Solutions to problems that can be expressed in terms of quadratic equations were known as early as 2000 BC.
+The quadratic equation contains only powers of ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠ that are non-negative integers, and therefore it is a polynomial equation. In particular, it is a second-degree polynomial equation, since the greatest power is two.
+
+== Solving the quadratic equation ==
+
+A quadratic equation whose coefficients are real numbers can have either zero, one, or two distinct real-valued solutions, also called roots. When there is only one distinct root, it can be interpreted as two roots with the same value, called a double root. When there are no real roots, the coefficients can be considered as complex numbers with zero imaginary part, and the quadratic equation still has two complex-valued roots, complex conjugates of each-other with a non-zero imaginary part. A quadratic equation whose coefficients are arbitrary complex numbers always has two complex-valued roots which may or may not be distinct.
+The solutions of a quadratic equation can be found by several alternative methods.

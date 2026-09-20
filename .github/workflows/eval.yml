@@ -1,0 +1,143 @@
+# samjho — golden-set retrieval evaluation.
+#
+# This is the gate that decides whether retrieval is good enough to ship: section Hit@4, MRR, page@4,
+# citation hit, golden acceptance and refusal accuracy, measured against the golden sets with the real
+# retriever and the real answer path. A gate that cannot fail is decoration, so there is no
+# `continue-on-error` in this file and none may be added (docs/PLAN.md §3, §6).
+#
+# ------------------------------------------------------------------------------------------------
+# READ THIS BEFORE EXPECTING THIS WORKFLOW TO BE GREEN
+#
+# The golden sets are questions about NCERT chapters, sections and pages, and the harness measures the
+# real retriever against an ingested corpus. That corpus is the student's own copy of the textbook,
+# which by docs/adr/ADR-001-licensing-boundary.md must never leave the machine that owns it — so it
+# can never exist on a GitHub-hosted runner, and this job FAILS there with "the eval harness could not
+# measure anything". That is the correct outcome, not a bug: there is nothing to measure.
+#
+# Where it is meant to run: on the machine that holds the corpus. Either locally —
+#
+#     DATABASE_URL=postgresql://samjho:...@localhost:5432/samjho uv run pytest -m eval
+#
+# — or from CI on a self-hosted runner with the corpus loaded, by changing this job's `runs-on` to:
+#
+#     runs-on: [self-hosted, samjho-corpus]
+#
+# The service container below is what makes the job runnable at all on a hosted runner (and what a
+# self-hosted runner can ignore in favour of the database it already has).
+# ------------------------------------------------------------------------------------------------
+#
+# Thresholds are NOT set here. `evals/run_eval.py` owns them as CLI defaults (DEFAULT_MIN_HIT4,
+# DEFAULT_MIN_MRR, DEFAULT_MIN_PAGE_HIT, DEFAULT_MIN_CITE_HIT, DEFAULT_MIN_GOLDEN_ACCEPTANCE,
+# DEFAULT_MIN_REFUSAL_ACCURACY) and its own comment says those defaults are measured values and must
+# not be raised without re-measuring. Duplicating them here would create a second, weaker source of
+# truth; pass `--min-hit4`/`--min-mrr` only for a deliberate diagnostic run.
+# (The runner cites `evals/README.md` as the record of how each default was measured; that file is not
+# in the tree yet, so the provenance of the numbers currently rests on the comment in run_eval.py.)
+
+name: eval
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # Weekly, so dependency or model drift is caught even when nobody pushes.
+    - cron: "0 3 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: eval-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  retrieval-gate:
+    name: golden-set retrieval eval (gated on the runner's own thresholds)
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: samjho
+          POSTGRES_PASSWORD: samjho
+          POSTGRES_DB: samjho
+        ports:
+          - 5432:5432
+        # GitHub starts the job's steps only once this passes, so no sleep loop is needed here.
+        options: >-
+          --health-cmd "pg_isready -U samjho -d samjho"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+
+    env:
+      DATABASE_URL: postgresql://samjho:samjho@localhost:5432/samjho
+      # Local models, downloaded on first use and cached for the rest of the job.
+      EMBEDDING_MODEL: BAAI/bge-small-en-v1.5
+      RERANKER_MODEL: cross-encoder/ms-marco-MiniLM-L-6-v2
+      HF_HOME: ${{ github.workspace }}/.hf-cache
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Install
+        run: uv sync --extra dev
+
+      - name: Preflight — Postgres reachable and pgvector installable
+        run: |
+          set -euo pipefail
+          uv run python - <<'PY'
+          import os
+          import psycopg
+
+          with psycopg.connect(os.environ["DATABASE_URL"]) as conn:
+              conn.execute("CREATE EXTENSION IF NOT EXISTS vector")
+              row = conn.execute(
+                  "SELECT extversion FROM pg_extension WHERE extname = 'vector'"
+              ).fetchone()
+          print("pgvector ready:", row[0] if row else "extension missing")
+          PY
+
+      # ---------------------------------------------------------------------------------------
+      # THE GATE. `eval` is the declared marker (pyproject.toml); tests/test_eval_gate.py calls the
+      # same harness the CLI does, so the CI number and the local number cannot drift apart. Its exit
+      # code decides the build, and a corpus that is missing is a failure, never a skip.
+      #
+      # Deliberately NOT used here: `--skip-answer`, which would measure retrieval alone and stop
+      # enforcing refusal — that is a diagnostic, not the gate.
+      # ---------------------------------------------------------------------------------------
+      - name: Retrieval eval gate (pytest -m eval)
+        run: uv run pytest -m eval -v
+
+      # ---------------------------------------------------------------------------------------
+      # The same measurement, printed for a human and archived: per-subject metrics, per-metric
+      # PASS/FAIL against the thresholds, and the refusal breakdown. Runs even when the gate failed,
+      # because the numbers matter most when the gate is red. `pipefail` keeps the runner's exit code
+      # authoritative through the tee.
+      # ---------------------------------------------------------------------------------------
+      - name: Threshold report (documented runner)
+        if: always()
+        run: |
+          set -euo pipefail
+          echo "## samjho golden-set retrieval eval" >> "$GITHUB_STEP_SUMMARY"
+          echo "Thresholds are the runner's committed defaults; see evals/run_eval.py." >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          uv run python -m evals.run_eval --subjects all --emit-json eval-report.json 2>&1 \
+            | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the machine-readable report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: eval-report.json
+          if-no-files-found: warn
